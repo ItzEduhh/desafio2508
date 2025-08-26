@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+    <title>Desafio difícil de desafiar</title>
+
+    <style>
+        body {
+            margin: 80px;
+            background-color: rgb(255, 193, 151);
+        }
+
+        #menu{
+            position: fixed;
+            top: 0px;
+            left: 300px;
+            right: 300px;
+            margin: 80px;
+            border: 10px solid rgb(155, 49, 49);
+            padding: 20px;
+            display: flex;
+            background-color: rgb(226, 199, 152);
+            justify-content: center;
+            z-index: 1;
+        }
+
+        #imgMenu img{
+            border: 5px solid black;
+            margin: 20px;
+        }
+
+        #btmVoltar{
+            position: fixed;
+            right: 30px;
+            bottom: 1px;
+            width: 70px;
+            height: 100px;
+            z-index: 3;
+        }
+
+        #sobre{
+            position: relative;
+            border: 5px solid rgb(151, 64, 64);
+            padding: 10px;
+            top:400px;
+        }
+
+        #vaiGrudar{
+            position: sticky;
+            top: 15px;
+            width: 150px;
+            height: 70px;
+            border: 5px solid crimson;
+            padding: 20px;
+            background-color: rgb(226, 199, 152);
+        }
+
+        .modal{
+            display: none;
+            position: fixed;
+            top: 15px;
+            width: 500px;
+            height: 160px;
+            border: 5px solid black;
+            padding: 20px;
+            background-color: black;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .close-btn{
+            border: 2px solid black;
+            width: 15px;
+            height: 15px;
+            cursor: pointer;
+        }
+
+        #abrirModal{
+            border: 2px solid black;
+            height: 60px;
+            width: 70px;
+            cursor: pointer;
+        }
+
+        #minhaModal{
+            position: sticky;
+            background-color: rgb(97, 82, 110);
+            z-index: 4;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <div id="menu">
+
+        <div id="imgMenu">
+            <img src="imagens/huaChibi.jpg" alt="" width="100px" height="100px">
+        </div>
+
+        <div id="cabecalho">
+            <h1>Cabeçalho bem feito</h1>
+        </div>
+
+        <div id="menuTexto">
+            <ul class="pp">
+                <li><a href="#">Não</a></li>
+                <li><a href="#">Entendi</a></li>
+                <li><a href="#">Nada</a></li>
+            </ul>
+        </div>
+
+        <button id="abrirModal">Abrir Modal</button>
+
+    </div>
+
+    <div class="modal" id="minhaModal">
+        <div id="conteudoModal">
+            <span class="close-btn" id="fecharModal">&times;</span>
+            <h1>Gostaria de desistir?</h1>
+            <p>Ainda da tempo, desista meu filho. Feche o VSCode, feche. Vai pra casa jogar Genshin, vai. Tua
+                Mavuika ta precisando de uma tiara boa, vai.
+            </p>
+        </div>
+    </div>
+
+    
+
+    <div id="btmVoltar">
+        <button><a href="index.html">Voltar ao inicio</a></button>
+    </div>
+
+    <div id="sobre">
+
+        <div id="vaiGrudar">
+            <h3>Quero desistir</h3>
+        </div>
+
+        <p>TGCF conta a história de Xie Lian, um deus imortal que após seu reino sucumbir, foi expulso
+            dos céus e forçado a viver como um mortal por 800, quando, após sua terceira ascenção, é 
+            novamente colocado em sua posição nos céus e volta a viver uma vida de missões e situações diversas.
+            Após conhecer um misterioso fantasma temido por todos os deuses, sua vida vira de cabeça para baixo. 
+            Durante a trama nós conhecemos a história de Xie Lian e seu reino, juntamente intrelaçando Hua Cheng,
+            Mu Qing e Fen Xin diretamente com seu passado obscuro, e com o desenrolar da história, conhecemos
+            o vilão por trás de todas as desgraças causadas na vida de Xie Lian.
+        </p>
+
+        <p>TGCF conta a história de Xie Lian, um deus imortal que após seu reino sucumbir, foi expulso
+            dos céus e forçado a viver como um mortal por 800, quando, após sua terceira ascenção, é 
+            novamente colocado em sua posição nos céus e volta a viver uma vida de missões e situações diversas.
+            Após conhecer um misterioso fantasma temido por todos os deuses, sua vida vira de cabeça para baixo. 
+            Durante a trama nós conhecemos a história de Xie Lian e seu reino, juntamente intrelaçando Hua Cheng,
+            Mu Qing e Fen Xin diretamente com seu passado obscuro, e com o desenrolar da história, conhecemos
+            o vilão por trás de todas as desgraças causadas na vida de Xie Lian.
+        </p>
+
+        <p>TGCF conta a história de Xie Lian, um deus imortal que após seu reino sucumbir, foi expulso
+            dos céus e forçado a viver como um mortal por 800, quando, após sua terceira ascenção, é 
+            novamente colocado em sua posição nos céus e volta a viver uma vida de missões e situações diversas.
+            Após conhecer um misterioso fantasma temido por todos os deuses, sua vida vira de cabeça para baixo. 
+            Durante a trama nós conhecemos a história de Xie Lian e seu reino, juntamente intrelaçando Hua Cheng,
+            Mu Qing e Fen Xin diretamente com seu passado obscuro, e com o desenrolar da história, conhecemos
+            o vilão por trás de todas as desgraças causadas na vida de Xie Lian.
+        </p>
+
+        <p>TGCF conta a história de Xie Lian, um deus imortal que após seu reino sucumbir, foi expulso
+            dos céus e forçado a viver como um mortal por 800, quando, após sua terceira ascenção, é 
+            novamente colocado em sua posição nos céus e volta a viver uma vida de missões e situações diversas.
+            Após conhecer um misterioso fantasma temido por todos os deuses, sua vida vira de cabeça para baixo. 
+            Durante a trama nós conhecemos a história de Xie Lian e seu reino, juntamente intrelaçando Hua Cheng,
+            Mu Qing e Fen Xin diretamente com seu passado obscuro, e com o desenrolar da história, conhecemos
+            o vilão por trás de todas as desgraças causadas na vida de Xie Lian.
+        </p>
+
+        <p>TGCF conta a história de Xie Lian, um deus imortal que após seu reino sucumbir, foi expulso
+            dos céus e forçado a viver como um mortal por 800, quando, após sua terceira ascenção, é 
+            novamente colocado em sua posição nos céus e volta a viver uma vida de missões e situações diversas.
+            Após conhecer um misterioso fantasma temido por todos os deuses, sua vida vira de cabeça para baixo. 
+            Durante a trama nós conhecemos a história de Xie Lian e seu reino, juntamente intrelaçando Hua Cheng,
+            Mu Qing e Fen Xin diretamente com seu passado obscuro, e com o desenrolar da história, conhecemos
+            o vilão por trás de todas as desgraças causadas na vida de Xie Lian.
+        </p>
+
+        <p>TGCF conta a história de Xie Lian, um deus imortal que após seu reino sucumbir, foi expulso
+            dos céus e forçado a viver como um mortal por 800, quando, após sua terceira ascenção, é 
+            novamente colocado em sua posição nos céus e volta a viver uma vida de missões e situações diversas.
+            Após conhecer um misterioso fantasma temido por todos os deuses, sua vida vira de cabeça para baixo. 
+            Durante a trama nós conhecemos a história de Xie Lian e seu reino, juntamente intrelaçando Hua Cheng,
+            Mu Qing e Fen Xin diretamente com seu passado obscuro, e com o desenrolar da história, conhecemos
+            o vilão por trás de todas as desgraças causadas na vida de Xie Lian.
+        </p>
+
+        <p>TGCF conta a história de Xie Lian, um deus imortal que após seu reino sucumbir, foi expulso
+            dos céus e forçado a viver como um mortal por 800, quando, após sua terceira ascenção, é 
+            novamente colocado em sua posição nos céus e volta a viver uma vida de missões e situações diversas.
+            Após conhecer um misterioso fantasma temido por todos os deuses, sua vida vira de cabeça para baixo. 
+            Durante a trama nós conhecemos a história de Xie Lian e seu reino, juntamente intrelaçando Hua Cheng,
+            Mu Qing e Fen Xin diretamente com seu passado obscuro, e com o desenrolar da história, conhecemos
+            o vilão por trás de todas as desgraças causadas na vida de Xie Lian.
+        </p>
+
+        <p>TGCF conta a história de Xie Lian, um deus imortal que após seu reino sucumbir, foi expulso
+            dos céus e forçado a viver como um mortal por 800, quando, após sua terceira ascenção, é 
+            novamente colocado em sua posição nos céus e volta a viver uma vida de missões e situações diversas.
+            Após conhecer um misterioso fantasma temido por todos os deuses, sua vida vira de cabeça para baixo. 
+            Durante a trama nós conhecemos a história de Xie Lian e seu reino, juntamente intrelaçando Hua Cheng,
+            Mu Qing e Fen Xin diretamente com seu passado obscuro, e com o desenrolar da história, conhecemos
+            o vilão por trás de todas as desgraças causadas na vida de Xie Lian.
+        </p>
+
+        <p>TGCF conta a história de Xie Lian, um deus imortal que após seu reino sucumbir, foi expulso
+            dos céus e forçado a viver como um mortal por 800, quando, após sua terceira ascenção, é 
+            novamente colocado em sua posição nos céus e volta a viver uma vida de missões e situações diversas.
+            Após conhecer um misterioso fantasma temido por todos os deuses, sua vida vira de cabeça para baixo. 
+            Durante a trama nós conhecemos a história de Xie Lian e seu reino, juntamente intrelaçando Hua Cheng,
+            Mu Qing e Fen Xin diretamente com seu passado obscuro, e com o desenrolar da história, conhecemos
+            o vilão por trás de todas as desgraças causadas na vida de Xie Lian.
+        </p>
+
+        <p>TGCF conta a história de Xie Lian, um deus imortal que após seu reino sucumbir, foi expulso
+            dos céus e forçado a viver como um mortal por 800, quando, após sua terceira ascenção, é 
+            novamente colocado em sua posição nos céus e volta a viver uma vida de missões e situações diversas.
+            Após conhecer um misterioso fantasma temido por todos os deuses, sua vida vira de cabeça para baixo. 
+            Durante a trama nós conhecemos a história de Xie Lian e seu reino, juntamente intrelaçando Hua Cheng,
+            Mu Qing e Fen Xin diretamente com seu passado obscuro, e com o desenrolar da história, conhecemos
+            o vilão por trás de todas as desgraças causadas na vida de Xie Lian.
+        </p>
+
+        <p>TGCF conta a história de Xie Lian, um deus imortal que após seu reino sucumbir, foi expulso
+            dos céus e forçado a viver como um mortal por 800, quando, após sua terceira ascenção, é 
+            novamente colocado em sua posição nos céus e volta a viver uma vida de missões e situações diversas.
+            Após conhecer um misterioso fantasma temido por todos os deuses, sua vida vira de cabeça para baixo. 
+            Durante a trama nós conhecemos a história de Xie Lian e seu reino, juntamente intrelaçando Hua Cheng,
+            Mu Qing e Fen Xin diretamente com seu passado obscuro, e com o desenrolar da história, conhecemos
+            o vilão por trás de todas as desgraças causadas na vida de Xie Lian.
+        </p>
+
+        <p>TGCF conta a história de Xie Lian, um deus imortal que após seu reino sucumbir, foi expulso
+            dos céus e forçado a viver como um mortal por 800, quando, após sua terceira ascenção, é 
+            novamente colocado em sua posição nos céus e volta a viver uma vida de missões e situações diversas.
+            Após conhecer um misterioso fantasma temido por todos os deuses, sua vida vira de cabeça para baixo. 
+            Durante a trama nós conhecemos a história de Xie Lian e seu reino, juntamente intrelaçando Hua Cheng,
+            Mu Qing e Fen Xin diretamente com seu passado obscuro, e com o desenrolar da história, conhecemos
+            o vilão por trás de todas as desgraças causadas na vida de Xie Lian.
+        </p>
+
+        <p>TGCF conta a história de Xie Lian, um deus imortal que após seu reino sucumbir, foi expulso
+            dos céus e forçado a viver como um mortal por 800, quando, após sua terceira ascenção, é 
+            novamente colocado em sua posição nos céus e volta a viver uma vida de missões e situações diversas.
+            Após conhecer um misterioso fantasma temido por todos os deuses, sua vida vira de cabeça para baixo. 
+            Durante a trama nós conhecemos a história de Xie Lian e seu reino, juntamente intrelaçando Hua Cheng,
+            Mu Qing e Fen Xin diretamente com seu passado obscuro, e com o desenrolar da história, conhecemos
+            o vilão por trás de todas as desgraças causadas na vida de Xie Lian.
+        </p>
+
+        <p>TGCF conta a história de Xie Lian, um deus imortal que após seu reino sucumbir, foi expulso
+            dos céus e forçado a viver como um mortal por 800, quando, após sua terceira ascenção, é 
+            novamente colocado em sua posição nos céus e volta a viver uma vida de missões e situações diversas.
+            Após conhecer um misterioso fantasma temido por todos os deuses, sua vida vira de cabeça para baixo. 
+            Durante a trama nós conhecemos a história de Xie Lian e seu reino, juntamente intrelaçando Hua Cheng,
+            Mu Qing e Fen Xin diretamente com seu passado obscuro, e com o desenrolar da história, conhecemos
+            o vilão por trás de todas as desgraças causadas na vida de Xie Lian.
+        </p>
+
+        <p>TGCF conta a história de Xie Lian, um deus imortal que após seu reino sucumbir, foi expulso
+            dos céus e forçado a viver como um mortal por 800, quando, após sua terceira ascenção, é 
+            novamente colocado em sua posição nos céus e volta a viver uma vida de missões e situações diversas.
+            Após conhecer um misterioso fantasma temido por todos os deuses, sua vida vira de cabeça para baixo. 
+            Durante a trama nós conhecemos a história de Xie Lian e seu reino, juntamente intrelaçando Hua Cheng,
+            Mu Qing e Fen Xin diretamente com seu passado obscuro, e com o desenrolar da história, conhecemos
+            o vilão por trás de todas as desgraças causadas na vida de Xie Lian.
+        </p>
+
+        <p>TGCF conta a história de Xie Lian, um deus imortal que após seu reino sucumbir, foi expulso
+            dos céus e forçado a viver como um mortal por 800, quando, após sua terceira ascenção, é 
+            novamente colocado em sua posição nos céus e volta a viver uma vida de missões e situações diversas.
+            Após conhecer um misterioso fantasma temido por todos os deuses, sua vida vira de cabeça para baixo. 
+            Durante a trama nós conhecemos a história de Xie Lian e seu reino, juntamente intrelaçando Hua Cheng,
+            Mu Qing e Fen Xin diretamente com seu passado obscuro, e com o desenrolar da história, conhecemos
+            o vilão por trás de todas as desgraças causadas na vida de Xie Lian.
+        </p>
+
+        <p>TGCF conta a história de Xie Lian, um deus imortal que após seu reino sucumbir, foi expulso
+            dos céus e forçado a viver como um mortal por 800, quando, após sua terceira ascenção, é 
+            novamente colocado em sua posição nos céus e volta a viver uma vida de missões e situações diversas.
+            Após conhecer um misterioso fantasma temido por todos os deuses, sua vida vira de cabeça para baixo. 
+            Durante a trama nós conhecemos a história de Xie Lian e seu reino, juntamente intrelaçando Hua Cheng,
+            Mu Qing e Fen Xin diretamente com seu passado obscuro, e com o desenrolar da história, conhecemos
+            o vilão por trás de todas as desgraças causadas na vida de Xie Lian.
+        </p>
+
+        <p>TGCF conta a história de Xie Lian, um deus imortal que após seu reino sucumbir, foi expulso
+            dos céus e forçado a viver como um mortal por 800, quando, após sua terceira ascenção, é 
+            novamente colocado em sua posição nos céus e volta a viver uma vida de missões e situações diversas.
+            Após conhecer um misterioso fantasma temido por todos os deuses, sua vida vira de cabeça para baixo. 
+            Durante a trama nós conhecemos a história de Xie Lian e seu reino, juntamente intrelaçando Hua Cheng,
+            Mu Qing e Fen Xin diretamente com seu passado obscuro, e com o desenrolar da história, conhecemos
+            o vilão por trás de todas as desgraças causadas na vida de Xie Lian.
+        </p>
+
+        <p>TGCF conta a história de Xie Lian, um deus imortal que após seu reino sucumbir, foi expulso
+            dos céus e forçado a viver como um mortal por 800, quando, após sua terceira ascenção, é 
+            novamente colocado em sua posição nos céus e volta a viver uma vida de missões e situações diversas.
+            Após conhecer um misterioso fantasma temido por todos os deuses, sua vida vira de cabeça para baixo. 
+            Durante a trama nós conhecemos a história de Xie Lian e seu reino, juntamente intrelaçando Hua Cheng,
+            Mu Qing e Fen Xin diretamente com seu passado obscuro, e com o desenrolar da história, conhecemos
+            o vilão por trás de todas as desgraças causadas na vida de Xie Lian.
+        </p>
+
+        <p>TGCF conta a história de Xie Lian, um deus imortal que após seu reino sucumbir, foi expulso
+            dos céus e forçado a viver como um mortal por 800, quando, após sua terceira ascenção, é 
+            novamente colocado em sua posição nos céus e volta a viver uma vida de missões e situações diversas.
+            Após conhecer um misterioso fantasma temido por todos os deuses, sua vida vira de cabeça para baixo. 
+            Durante a trama nós conhecemos a história de Xie Lian e seu reino, juntamente intrelaçando Hua Cheng,
+            Mu Qing e Fen Xin diretamente com seu passado obscuro, e com o desenrolar da história, conhecemos
+            o vilão por trás de todas as desgraças causadas na vida de Xie Lian.
+        </p>
+
+        <p>TGCF conta a história de Xie Lian, um deus imortal que após seu reino sucumbir, foi expulso
+            dos céus e forçado a viver como um mortal por 800, quando, após sua terceira ascenção, é 
+            novamente colocado em sua posição nos céus e volta a viver uma vida de missões e situações diversas.
+            Após conhecer um misterioso fantasma temido por todos os deuses, sua vida vira de cabeça para baixo. 
+            Durante a trama nós conhecemos a história de Xie Lian e seu reino, juntamente intrelaçando Hua Cheng,
+            Mu Qing e Fen Xin diretamente com seu passado obscuro, e com o desenrolar da história, conhecemos
+            o vilão por trás de todas as desgraças causadas na vida de Xie Lian.
+        </p>
+
+        <p>TGCF conta a história de Xie Lian, um deus imortal que após seu reino sucumbir, foi expulso
+            dos céus e forçado a viver como um mortal por 800, quando, após sua terceira ascenção, é 
+            novamente colocado em sua posição nos céus e volta a viver uma vida de missões e situações diversas.
+            Após conhecer um misterioso fantasma temido por todos os deuses, sua vida vira de cabeça para baixo. 
+            Durante a trama nós conhecemos a história de Xie Lian e seu reino, juntamente intrelaçando Hua Cheng,
+            Mu Qing e Fen Xin diretamente com seu passado obscuro, e com o desenrolar da história, conhecemos
+            o vilão por trás de todas as desgraças causadas na vida de Xie Lian.
+        </p>
+
+        <p>TGCF conta a história de Xie Lian, um deus imortal que após seu reino sucumbir, foi expulso
+            dos céus e forçado a viver como um mortal por 800, quando, após sua terceira ascenção, é 
+            novamente colocado em sua posição nos céus e volta a viver uma vida de missões e situações diversas.
+            Após conhecer um misterioso fantasma temido por todos os deuses, sua vida vira de cabeça para baixo. 
+            Durante a trama nós conhecemos a história de Xie Lian e seu reino, juntamente intrelaçando Hua Cheng,
+            Mu Qing e Fen Xin diretamente com seu passado obscuro, e com o desenrolar da história, conhecemos
+            o vilão por trás de todas as desgraças causadas na vida de Xie Lian.
+        </p>
+
+        <p>TGCF conta a história de Xie Lian, um deus imortal que após seu reino sucumbir, foi expulso
+            dos céus e forçado a viver como um mortal por 800, quando, após sua terceira ascenção, é 
+            novamente colocado em sua posição nos céus e volta a viver uma vida de missões e situações diversas.
+            Após conhecer um misterioso fantasma temido por todos os deuses, sua vida vira de cabeça para baixo. 
+            Durante a trama nós conhecemos a história de Xie Lian e seu reino, juntamente intrelaçando Hua Cheng,
+            Mu Qing e Fen Xin diretamente com seu passado obscuro, e com o desenrolar da história, conhecemos
+            o vilão por trás de todas as desgraças causadas na vida de Xie Lian.
+        </p>
+
+        <p>TGCF conta a história de Xie Lian, um deus imortal que após seu reino sucumbir, foi expulso
+            dos céus e forçado a viver como um mortal por 800, quando, após sua terceira ascenção, é 
+            novamente colocado em sua posição nos céus e volta a viver uma vida de missões e situações diversas.
+            Após conhecer um misterioso fantasma temido por todos os deuses, sua vida vira de cabeça para baixo. 
+            Durante a trama nós conhecemos a história de Xie Lian e seu reino, juntamente intrelaçando Hua Cheng,
+            Mu Qing e Fen Xin diretamente com seu passado obscuro, e com o desenrolar da história, conhecemos
+            o vilão por trás de todas as desgraças causadas na vida de Xie Lian.
+        </p>
+
+        <p>TGCF conta a história de Xie Lian, um deus imortal que após seu reino sucumbir, foi expulso
+            dos céus e forçado a viver como um mortal por 800, quando, após sua terceira ascenção, é 
+            novamente colocado em sua posição nos céus e volta a viver uma vida de missões e situações diversas.
+            Após conhecer um misterioso fantasma temido por todos os deuses, sua vida vira de cabeça para baixo. 
+            Durante a trama nós conhecemos a história de Xie Lian e seu reino, juntamente intrelaçando Hua Cheng,
+            Mu Qing e Fen Xin diretamente com seu passado obscuro, e com o desenrolar da história, conhecemos
+            o vilão por trás de todas as desgraças causadas na vida de Xie Lian.
+        </p>
+    </div>
+
+
+</body>
+
+<script>
+
+    const botaoAbrir = document.getElementById("abrirModal")
+    const modal = document.getElementById("minhaModal")
+    const closeModal = document.getElementById("fecharModal")
+
+    botaoAbrir.onclick = function(){
+        modal.style.display = "block";
+    }
+
+    closeModal.onclick = function(){
+        modal.style.display = "none";
+    }
+    
+</script>
+
+</html>
